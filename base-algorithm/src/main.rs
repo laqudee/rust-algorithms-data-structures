@@ -1,6 +1,6 @@
 use std::time::SystemTime;
 
-mod anagram_solution;
+mod anagram;
 
 fn sum_of_n(n: i64) -> i64 {
     let mut sum = 0;
@@ -40,6 +40,8 @@ fn main() {
 
     let s1 = "rust";
     let s2 = "trus";
-    let res = anagram_solution::anagram_solution(s1, s2);
+    let res = anagram::solution2::play(s1, s2);
+    let res2 = anagram::solution3::play(s1, s2);
     println!("s1 and s2 is anagram: {res}");
+    println!("s1 and s2 is anagram: {res2}");
 }
