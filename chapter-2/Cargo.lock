@@ -3,5 +3,5 @@
 version = 3
 
 [[package]]
-name = "base-algorithm"
+name = "chapter-2"
 version = "0.1.0"
