@@ -40,8 +40,10 @@ fn main() {
 
     let s1 = "rust";
     let s2 = "trus";
-    let res = anagram::solution2::play(s1, s2);
-    let res2 = anagram::solution3::play(s1, s2);
-    println!("s1 and s2 is anagram: {res}");
+    let res2 = anagram::solution2::play(s1, s2);
+    let res3 = anagram::solution3::play(s1, s2);
+    let res4 = anagram::solution4::play(s1, s2);
     println!("s1 and s2 is anagram: {res2}");
+    println!("s1 and s2 is anagram: {res3}");
+    println!("s1 and s2 is anagram: {res4}");
 }

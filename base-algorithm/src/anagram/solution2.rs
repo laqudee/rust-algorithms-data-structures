@@ -1,3 +1,4 @@
+/// 检查法
 pub fn play(s1: &str, s2: &str) -> bool {
     // 字符串长度不同，一定不是乱序字符串
     if s1.len() != s2.len() {

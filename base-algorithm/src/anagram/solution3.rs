@@ -1,3 +1,4 @@
+/// 排序和比较法
 pub fn play(s1: &str, s2: &str) -> bool {
     if s1.len() != s2.len() {
         return false;
