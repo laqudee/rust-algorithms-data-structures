@@ -1,9 +1,9 @@
-mod divide_by_two;
-mod par_checker1;
-mod par_checker2;
-mod par_checker3;
+mod converter;
+mod par_checker;
 mod stack;
 
+use converter::divide_by_two;
+use par_checker::{par_checker1, par_checker2, par_checker3};
 use stack::Stack;
 
 fn main() {
