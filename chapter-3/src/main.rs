@@ -2,7 +2,7 @@ mod converter;
 mod par_checker;
 mod stack;
 
-use converter::divide_by_two;
+use converter::{base_converter, divide_by_two};
 use par_checker::{par_checker1, par_checker2, par_checker3};
 use stack::Stack;
 
@@ -42,4 +42,9 @@ fn main() {
     // Test Divide By Two
     let bin_str = divide_by_two::work(138);
     println!("10 is binary: {}", bin_str);
+
+    //Test Base Converter
+    let bin_str = base_converter::work(138, 2);
+    let hex_str = base_converter::work(138, 16);
+    println!("10 is binary: {}, hex: {}", bin_str, hex_str);
 }
