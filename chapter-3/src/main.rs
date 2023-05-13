@@ -2,13 +2,15 @@ mod converter;
 mod deque;
 mod infix;
 mod linked_list;
+mod list_stack;
+mod lvec;
 mod par_checker;
 mod queue;
 mod stack;
 mod works;
-mod list_stack;
 
 use converter::{base_converter, divide_by_two};
+use lvec::it_work;
 use works::{
     deque_work, hot_potato, link_list_work, list_stack_work, pal_checker, queue_work, stack_work,
 };
@@ -56,4 +58,7 @@ fn main() {
 
     // Test List Stack
     list_stack_work::work();
+
+    // Test LVec
+    it_work::work();
 }
