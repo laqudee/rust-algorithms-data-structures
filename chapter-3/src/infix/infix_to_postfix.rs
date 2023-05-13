@@ -1,4 +1,5 @@
-use crate::{par_checker3, stack::Stack};
+use crate::par_checker::par_checker3;
+use crate::stack::Stack;
 /// 中缀表达式转为后缀表达式
 use std::collections::HashMap;
 

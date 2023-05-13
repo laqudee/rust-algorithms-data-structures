@@ -1,5 +1,5 @@
 use crate::stack::Stack;
-use crate::par_checker2::par_match;
+use crate::par_checker::par_checker2::par_match;
 
 /// 处理含有非开闭符号的匹配问题
 
