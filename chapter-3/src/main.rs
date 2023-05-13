@@ -1,4 +1,5 @@
 mod converter;
+mod infix;
 mod par_checker;
 mod stack;
 
@@ -47,4 +48,10 @@ fn main() {
     let bin_str = base_converter::work(138, 2);
     let hex_str = base_converter::work(138, 16);
     println!("10 is binary: {}, hex: {}", bin_str, hex_str);
+
+    // Test infix
+    infix::it_work();
+
+    // Test postfix_eval
+    infix::eval_work();
 }
