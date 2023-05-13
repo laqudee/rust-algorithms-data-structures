@@ -6,10 +6,12 @@ mod par_checker;
 mod queue;
 mod stack;
 mod works;
+mod list_stack;
 
 use converter::{base_converter, divide_by_two};
-// use list_stack::ListStack;
-use works::{deque_work, hot_potato, link_list_work, pal_checker, queue_work, stack_work};
+use works::{
+    deque_work, hot_potato, link_list_work, list_stack_work, pal_checker, queue_work, stack_work,
+};
 
 fn main() {
     // Test Stack
@@ -32,7 +34,7 @@ fn main() {
 
     //Test Queue
     queue_work::work();
-    
+
     //Test hot_potato game
     let names = vec![
         "Alice", "Bob", "Charlie", "David", "Eve", "Fred", "Ginny", "Harriet", "Ileana", "Joseph",
@@ -50,5 +52,8 @@ fn main() {
     println!("pal is pal: {}", is_pal);
 
     // Test Link List
-    link_list_work::work()
+    link_list_work::work();
+
+    // Test List Stack
+    list_stack_work::work();
 }
