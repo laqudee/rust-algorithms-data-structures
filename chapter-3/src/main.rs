@@ -1,4 +1,5 @@
 mod converter;
+mod hot_potato;
 mod infix;
 mod par_checker;
 mod queue;
@@ -68,4 +69,12 @@ fn main() {
     println!("size: {}, empty: {}", q.size(), q.is_empty());
     let de_res1 = q.dequeue();
     println!("de_res1: {:?}, content: {:?}", de_res1, q);
+
+    //Test hot_potato game
+    let names = vec![
+        "Alice", "Bob", "Charlie", "David", "Eve", "Fred", "Ginny", "Harriet", "Ileana", "Joseph",
+        "Kincaid", "Larry",
+    ];
+    let rem = hot_potato::work(names, 23);
+    println!("The left person is {rem}");
 }
