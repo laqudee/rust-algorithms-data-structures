@@ -1,10 +1,12 @@
 mod converter;
 mod infix;
 mod par_checker;
+mod queue;
 mod stack;
 
 use converter::{base_converter, divide_by_two};
 use par_checker::{par_checker1, par_checker2, par_checker3};
+use queue::Queue;
 use stack::Stack;
 
 fn main() {
@@ -54,4 +56,16 @@ fn main() {
 
     // Test postfix_eval
     infix::eval_work();
+
+    //Test Queue
+    let mut q = Queue::new(3);
+    let _r1 = q.enqueue(1);
+    let _r2 = q.enqueue(2);
+    let _r3 = q.enqueue(3);
+    if let Err(error) = q.enqueue(4) {
+        println!("Enqueue error: {}", error);
+    }
+    println!("size: {}, empty: {}", q.size(), q.is_empty());
+    let de_res1 = q.dequeue();
+    println!("de_res1: {:?}, content: {:?}", de_res1, q);
 }
