@@ -27,7 +27,7 @@ impl<T> Stack<T> {
         self.data.pop()
     }
 
-    pub fn peek(&self) -> Option<&T> {
+    pub fn _peek(&self) -> Option<&T> {
         if self.top == 0 {
             return None;
         }
@@ -38,7 +38,7 @@ impl<T> Stack<T> {
         0 == self.top
     }
 
-    pub fn size(&self) -> usize {
+    pub fn _size(&self) -> usize {
         self.top // 栈顶恰好就是栈中元素个数
     }
 }
