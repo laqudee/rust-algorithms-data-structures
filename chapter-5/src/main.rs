@@ -1,6 +1,10 @@
+mod binary;
 mod sequential;
 
 fn main() {
     // Test 顺序查找
     sequential::it_work();
+
+    // Test 二分查找
+    binary::it_work();
 }
