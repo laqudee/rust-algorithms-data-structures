@@ -1,7 +1,8 @@
+mod dynamic_planning;
+mod move2tower;
 mod num2str;
 mod stack;
 mod sum;
-mod move2tower;
 
 fn main() {
     // 简单递归
@@ -15,4 +16,7 @@ fn main() {
     move2tower::work(2, "A", "B", "C");
     move2tower::work(3, "A", "B", "C");
     move2tower::work(4, "A", "B", "C");
+
+    // rust 实现 贪婪方法 找零
+    dynamic_planning::it_work()
 }
