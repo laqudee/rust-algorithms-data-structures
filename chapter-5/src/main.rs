@@ -1,4 +1,5 @@
 mod binary;
+mod hash;
 mod sequential;
 
 fn main() {
@@ -7,4 +8,7 @@ fn main() {
 
     // Test 二分查找
     binary::it_work();
+
+    // Test 哈希查找
+    hash::it_work();
 }
