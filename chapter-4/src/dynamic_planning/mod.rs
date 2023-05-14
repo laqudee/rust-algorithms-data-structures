@@ -1,3 +1,4 @@
+pub mod dp_fibnacci;
 pub mod dp_rec_mc;
 pub mod dp_rec_mc_show;
 pub mod rec_mc1;
@@ -25,5 +26,9 @@ pub fn it_work() {
     let amount = 81u32;
     let cs_num = dp_rec_mc_show::dp_rec_mc_show(&cashes, amount, &mut min_cashes, &mut cashes_used);
     println!("need refund {} cashes", cs_num);
-    dp_rec_mc_show::print_cashes(&cashes_used, amount)
+    dp_rec_mc_show::print_cashes(&cashes_used, amount);
+
+    // fibnacci
+    println!("fib 10: {}", dp_fibnacci::fibnacci_rec(10));
+    println!("fib 10: {}", dp_fibnacci::fibnacci_dp(10));
 }
