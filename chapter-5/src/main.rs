@@ -1,3 +1,6 @@
+mod sequential;
+
 fn main() {
-    println!("Hello, world!");
+    // Test 顺序查找
+    sequential::it_work();
 }
