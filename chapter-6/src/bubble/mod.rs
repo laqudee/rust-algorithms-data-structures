@@ -1,5 +1,8 @@
 /// 冒泡排序
+
+pub mod cant_believe_it_can_sort;
 pub mod cocktail_sort;
+pub mod comb_sort;
 
 fn bubble_sort1(nums: &mut [i32]) {
     if nums.len() < 2 {
@@ -56,5 +59,16 @@ pub fn it_work() {
 
     let mut nums = [1, 3, 2, 8, 3, 6, 4, 9, 5, 10, 6, 7];
     cocktail_sort::sort(&mut nums);
+    println!("sorted nums: {:?}", nums);
+
+    let mut nums = [36, 2, 93, 44, 13, 77, 3, 4, 9, 5, 6, 7];
+    comb_sort::sort(&mut nums);
+    println!("sorted nums: {:?}", nums);
+
+    let mut nums = [54, 26, 93, 17, 77, 31, 44, 55, 20];
+    cant_believe_it_can_sort::cbic_sort1(&mut nums);
+    println!("sorted nums: {:?}", nums);
+
+    cant_believe_it_can_sort::cbic_sort2(&mut nums);
     println!("sorted nums: {:?}", nums);
 }

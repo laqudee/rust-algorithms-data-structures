@@ -1,3 +1,6 @@
+/// 鸡尾酒排序（冒泡排序的变种）
+/// 双端排序
+
 pub fn sort(nums: &mut [i32]) {
     if nums.len() <= 1 {
         return;
