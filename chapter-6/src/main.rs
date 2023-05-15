@@ -1,3 +1,8 @@
+/// 排序
+
+mod bubble;
+
 fn main() {
-    println!("Hello, world!");
+    // Test 冒泡排序
+    bubble::it_work();
 }
