@@ -1,5 +1,6 @@
 /// 排序
 mod bubble;
+mod heap;
 mod insertion;
 mod merge;
 mod quick;
@@ -24,4 +25,7 @@ fn main() {
 
     // Test 选择排序
     selection::it_work();
+
+    // Test 堆排序
+    heap::it_work();
 }
