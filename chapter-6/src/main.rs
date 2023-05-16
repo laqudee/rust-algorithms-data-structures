@@ -3,6 +3,7 @@ mod bubble;
 mod insertion;
 mod merge;
 mod quick;
+mod selection;
 mod shell;
 
 fn main() {
@@ -20,4 +21,7 @@ fn main() {
 
     // Test 归并排序
     merge::it_work();
+
+    // Test 选择排序
+    selection::it_work();
 }
