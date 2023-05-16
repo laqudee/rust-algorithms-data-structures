@@ -1,5 +1,6 @@
 /// 排序
 mod bubble;
+mod bucket;
 mod heap;
 mod insertion;
 mod merge;
@@ -28,4 +29,7 @@ fn main() {
 
     // Test 堆排序
     heap::it_work();
+
+    //Test 桶排序
+    bucket::it_work();
 }
