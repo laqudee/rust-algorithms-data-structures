@@ -1,7 +1,8 @@
 /// 排序
 mod bubble;
-mod quick;
 mod insertion;
+mod merge;
+mod quick;
 mod shell;
 
 fn main() {
@@ -16,4 +17,7 @@ fn main() {
 
     // Test 希尔排序
     shell::it_work();
+
+    // Test 归并排序
+    merge::it_work();
 }
