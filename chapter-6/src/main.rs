@@ -6,6 +6,7 @@ mod heap;
 mod insertion;
 mod merge;
 mod quick;
+mod radix;
 mod selection;
 mod shell;
 
@@ -36,4 +37,7 @@ fn main() {
 
     // Test 计数排序
     counting::it_work();
+
+    // Test 基数排序
+    radix::it_work();
 }
