@@ -1,6 +1,7 @@
 /// 排序
 mod bubble;
 mod bucket;
+mod counting;
 mod heap;
 mod insertion;
 mod merge;
@@ -32,4 +33,7 @@ fn main() {
 
     //Test 桶排序
     bucket::it_work();
+
+    // Test 计数排序
+    counting::it_work();
 }
