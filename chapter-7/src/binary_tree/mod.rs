@@ -3,6 +3,8 @@ pub mod get_exp;
 pub mod order;
 use std::fmt::Debug;
 
+use crate::binary_tree::order::{inorder, postorder, preorder};
+
 // 子节点连接
 pub type Link<T> = Option<Box<BinaryTree<T>>>;
 
@@ -62,7 +64,7 @@ impl<T: Clone + Debug> BinaryTree<T> {
         self.key.clone()
     }
 
-    pub fn set_key(&mut self, key: T) {
+    pub fn _set_key(&mut self, key: T) {
         self.key = key;
     }
 
@@ -107,17 +109,24 @@ pub fn it_work() {
     let root = bt.get_key();
     println!("root val is {:?}", root);
 
-    let left = bt.get_left();
-    println!("left child is {:#?}", left);
-
-    let right = bt.get_right();
-    println!("right child is {:#?}", right);
-
     bt.insert_left_tree('b');
-    bt.insert_right_tree('e');
+    bt.insert_right_tree('c');
 
     let left = bt.get_left();
     println!("left child is {:#?}", left);
-    let right = bt.get_right();
+    let right = bt.get_left();
     println!("right child is {:#?}", right);
+
+    bt.preorder();
+    bt.inorder();
+    bt.postorder();
+
+    let nk = Some(Box::new(bt));
+
+    preorder(nk.clone());
+    inorder(nk.clone());
+    postorder(nk.clone());
+
+    let tree_str = get_exp::get_exp(nk);
+    println!("String expr is {tree_str}");
 }
