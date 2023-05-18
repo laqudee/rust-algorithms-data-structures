@@ -1,6 +1,7 @@
 /// Rust 实现树
+pub mod get_exp;
 pub mod order;
-use std::fmt::{Debug, Display};
+use std::fmt::Debug;
 
 // 子节点连接
 pub type Link<T> = Option<Box<BinaryTree<T>>>;
