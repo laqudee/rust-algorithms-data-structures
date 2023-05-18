@@ -1,3 +1,6 @@
+mod binary_tree;
+
 fn main() {
-    println!("Hello, world!");
+    // Test 树
+    binary_tree::it_work();
 }
