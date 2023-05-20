@@ -1,6 +1,6 @@
 /// 二叉查找树
 use std::cmp::Ordering;
-use std::ops::Deref;
+// use std::ops::Deref;
 
 // 二叉查找树子节点链接
 type Link<T, U> = Option<Box<BST<T, U>>>;

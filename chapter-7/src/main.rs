@@ -1,6 +1,7 @@
+mod avl;
 mod binary_heap;
-mod binary_tree;
 mod binary_search_tree;
+mod binary_tree;
 
 fn main() {
     // Test 树
@@ -11,4 +12,7 @@ fn main() {
 
     // Test 二叉查找树
     binary_search_tree::it_work();
+
+    // Test AVL二叉平衡树
+    avl::it_work();
 }
