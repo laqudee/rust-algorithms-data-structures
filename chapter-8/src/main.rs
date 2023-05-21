@@ -1,4 +1,5 @@
 mod bfs;
+mod dfs;
 mod graph_adjlist;
 mod graph_matrix;
 
@@ -11,4 +12,7 @@ fn main() {
 
     // Test 广度优先遍历
     bfs::it_work();
+
+    // Test 深度优先遍历
+    dfs::it_work();
 }
