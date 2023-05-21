@@ -2,6 +2,7 @@ mod bfs;
 mod dfs;
 mod graph_adjlist;
 mod graph_matrix;
+mod dijkstra;
 
 fn main() {
     // Test 邻接矩阵实现的图
@@ -15,4 +16,7 @@ fn main() {
 
     // Test 深度优先遍历
     dfs::it_work();
+
+    // Test 最短路径算法Dijkstra
+    dijkstra::it_work();
 }
