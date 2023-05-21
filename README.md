@@ -18,4 +18,7 @@
   - ![tree order](./media/tree_order.png)
   - ![tree](./media/tree.png)
 - 图，邻接表，邻接矩阵等
+  - 广度优先搜索
+  - 深度优先搜索
+  - 最短路径算法Dijkstra
 - 实战，距离算法、字典树、过滤器、缓存淘汰算法、一致性哈希算法，区块链
