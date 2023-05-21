@@ -1,3 +1,6 @@
+mod graph_matrix;
+
 fn main() {
-    println!("Hello, world!");
+    // Test 邻接矩阵实现的图
+    graph_matrix::it_work();
 }
