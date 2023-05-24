@@ -1,6 +1,7 @@
 mod block;
 mod blockchain;
 mod serializer;
+mod pow;
 
 use blockchain::BlockChain as BC;
 
