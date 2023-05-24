@@ -23,3 +23,17 @@
   - 区块哈希，是计算区块头和区块体得到的哈希值
 
 - 哈希值非常重要，首先来实现哈希计算，计算之前先将区块结构体序列化，再计算哈希值
+
+```rs
+pub struct Block {
+  pub header: BlockHeader,
+  pub tranxs: String,
+  pub hash: String,
+}
+
+pub struct BlockHeader {
+  pub time: i64,
+  pub pre_hash: String,
+  pub txs_hash: String,
+}
+```
